@@ -26,4 +26,3 @@ LAN: Static IP (192.168.1.1/24)
 | Deny All Default     | Any        | Any        | ❌ Block | Blocks all unspecified traffic |
 
 
-I didn't configure much for the firewall for security monitoring because this project focuses more on using Sysmon and Splunk. 
