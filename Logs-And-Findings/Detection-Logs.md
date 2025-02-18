@@ -1,1 +1,20 @@
+# Detection Logs
 
+## Splunk Log Generation Test
+
+This document outlines the tests performed to generate logs in Splunk, including security events, system logs, and network activity.
+
+## **1. Windows Security Event Logs**
+### **Test: Failed Login Attempts**
+- **Objective**: Generate failed login events in Windows Security Logs.
+- **Steps**:
+  1. Attempt multiple failed logins on the Windows Server.
+  2. Use an incorrect password to trigger an event.
+  3. Check Event Viewer under `Windows Logs > Security` for Event ID **4625**.
+- **Expected Logs**:
+  - Event ID `4625`: "An account failed to log on."
+  - Details include username, source IP, and failure reason.
+
+![Screenshot 2025-02-17 225734](https://github.com/user-attachments/assets/1885c285-e8fe-4a2c-8f8a-01edb0960ade)
+
+ All I had to do was run ```` runas User:msalvas cmd.exe ```` and enter the wrong password
