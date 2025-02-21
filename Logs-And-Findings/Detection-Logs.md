@@ -26,4 +26,5 @@ This document outlines the tests performed to generate logs in Splunk, including
   2. I ran this command ```` Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "Anynameyouwant" -Value "Anyvalueyouwant" -Force ````
   3. Check Event Viewer and Splunk to make sure event generated.
 
-     ![Screenshot 2025-02-21 014234](https://github.com/user-attachments/assets/a6bf7400-1646-464f-984c-3cd9c242fe15)
+![Screenshot 2025-02-21 020459](https://github.com/user-attachments/assets/974c540f-d8a5-476e-bc33-f8b00ba55e34)
+
